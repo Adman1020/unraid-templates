@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>NAiBS</Name>
+  <Repository>ghcr.io/adman1020/naibs:master</Repository>
+  <Registry>https://github.com/Adman1020/NAiBS/pkgs/container/naibs</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Adman1020/NAiBS/issues</Support>
+  <Project>https://github.com/Adman1020/NAiBS</Project>
+  <Overview>NAiBS (No AI Bullshit) - Cut through the clickbait. NAiBS fetches your RSS feeds and rewrites every headline into plain, honest English using an AI of your choice (Gemini, OpenAI, Anthropic, or local Ollama).</Overview>
+  <Category>Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Adman1020/NAiBS/development/app/static/icon.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="8000" Default="8000" Mode="tcp" Description="The port the WebUI runs on." Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="App Data" Target="/app/data" Default="/mnt/user/appdata/naibs" Mode="rw" Description="Persistent storage for settings, activity log, and cached articles." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/naibs</Config>
+  <Config Name="Timezone" Target="TZ" Default="Europe/London" Mode="" Description="Container Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/London</Config>
+</Container>
