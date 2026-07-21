@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>NAiBS</Name>
-  <Repository>ghcr.io/adman1020/naibs:master</Repository>
+  <Repository>ghcr.io/adman1020/naibs:latest</Repository>
   <Registry>https://github.com/Adman1020/NAiBS/pkgs/container/naibs</Registry>
   <Network>bridge</Network>
   <MyIP/>
